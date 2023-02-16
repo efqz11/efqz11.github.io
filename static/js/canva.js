@@ -7,8 +7,8 @@ var App = {};
 App.setup = function () {
   var canvas = document.createElement("canvas");
   this.filename = "spipa";
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.width =  window.innerWidth; // $('.box-center').width(); // window.innerWidth;
+  canvas.height = window.innerHeight; // $('.box-center').height(); //window.innerHeight;
   this.canvas = canvas;
   document.getElementsByClassName("box-center")[0].appendChild(canvas);
 //   document.getElementsByTagName("body")[0].appendChild(canvas);
