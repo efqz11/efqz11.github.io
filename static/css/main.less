@@ -23,7 +23,14 @@ body {
 // DARK THEME
 body.is-dark{
     color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+    .container {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .in-body.btn-primary{
+        // border:2px solid white;
+        color: #d0d0d0;
+    }
     // background-color:rgb(10, 24, 61);
     
     .main-menu{
@@ -126,7 +133,7 @@ body.is-dark{
 
 p,span,ul.more{color: rgb(85, 85, 85);}
 .container{
-    margin: 5rem 10rem;
+    padding: 5rem 10rem;
 }
 
 .text-center {text-align: center;}
@@ -192,7 +199,7 @@ p,span,ul.more{color: rgb(85, 85, 85);}
     margin-bottom:10px !important;
 }
 
-a:not(.reset){text-decoration: unset}
+a:not(.reset){text-decoration: unset !important}
 a {
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
     color:rgb(70, 149, 255);
@@ -264,7 +271,7 @@ span.vert-divider{
 
 
     .box-center{
-        background:rgb(189, 189, 189);
+        // background:rgb(189, 189, 189);
         height: 100vh;
         align-items: center;
         display: flex;
@@ -352,7 +359,7 @@ span.vert-divider{
 @media only screen and (max-width: 767px) {
     /* Phones */
     .container{
-        margin: 1rem 2rem;
+        padding: 1rem 2rem;
     }
 
     ul.tabs li{
@@ -371,6 +378,9 @@ span.vert-divider{
             margin-bottom: 35px !important;
             &:last-child {
                 margin-bottom: 0px !important;
+            }
+            a.btn-primary{
+                font-size: 16px !important;
             }
         }
     }
@@ -419,6 +429,11 @@ span.vert-divider{
     font-size: 18px;
     transition: all ease 1s;
     color: #dcdcdc;
+
+    &.in-body{
+        border: 2px solid #d4d4d4;
+        color: #6b6b6b;
+    }
 
     &:hover{
         border:2px solid @red;
