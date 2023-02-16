@@ -64,6 +64,9 @@ body.is-dark .scroll-top {
   background-color: #ededed;
   color: black;
 }
+body.is-dark .appicon {
+  box-shadow: 2px 3px 5px #525252;
+}
 .theme-swither {
   display: flex;
   flex-direction: row-reverse;
@@ -155,6 +158,7 @@ a:not(.reset) {
   text-decoration: unset;
 }
 a {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   color: #4695ff;
 }
 span.vert-divider {
@@ -257,7 +261,7 @@ span.vert-divider {
   color: white;
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
+  width: 100%;
 }
 .box .box-center .box-center-inner h1 {
   margin-top: 0px;
@@ -325,6 +329,12 @@ span.vert-divider {
     display: flex;
     flex-wrap: wrap;
   }
+  .flex-container .flex-item {
+    margin-bottom: 35px !important;
+  }
+  .flex-container .flex-item:last-child {
+    margin-bottom: 0px !important;
+  }
   .project-item {
     display: flex;
     flex-wrap: wrap;
@@ -332,14 +342,21 @@ span.vert-divider {
   .project-item .project-content {
     width: 100% !important;
   }
+  .project-item .project-content ul.project-tech-list {
+    color: #5d5d5d;
+  }
   .project-item .project-image {
     width: 100% !important;
     margin-right: 0% !important;
     margin-left: 0% !important;
   }
   hr {
-    margin: 4rem 10rem !important;
+    margin: 4rem 8rem !important;
     border-width: 2px !important;
+  }
+  .social-media {
+    transform: scale(0.8);
+    transform-origin: left;
   }
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -520,12 +537,13 @@ a.btn-primary:hover {
 }
 .project-item .project-content ul.project-tech-list {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 25px;
   margin-bottom: 10px;
   padding: 0px;
   list-style-image: initial;
   list-style-type: none;
-  color: #5d5d5d;
+  color: #aaaaaa;
   font-size: 14px;
 }
 .project-item .project-content ul.project-tech-list li {
@@ -535,7 +553,7 @@ a.btn-primary:hover {
   display: block;
   width: 75px;
   border-radius: 15px;
-  box-shadow: 2px 3px 5px #525252;
+  box-shadow: 2px 3px 5px #c5c5c5;
   max-height: 75px;
   object-fit: contain;
   margin-bottom: 10px;
