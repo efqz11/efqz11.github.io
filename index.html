@@ -1,0 +1,654 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome to my page</title>
+
+        <link rel="stylesheet" href="../static/css/main.css">
+        
+        <script src="../static/js/canva.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"   integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="   crossorigin="anonymous"></script>
+        <script src="../static/js/site.js" ></script>
+    </head>
+    <body class="is-dark">
+        <section class="header">
+            <div class="box"  id="home">
+                <div class="box-center">
+                        <div class="ui" style="display:none">
+                            <p class="zoom"><span class="zoom zoomin">+</span><span class="zoom zoomout">-</span></p>
+                            <p class="zoomlevel"><span class="percent">100</span> % - (<span class="width"></span>px)(<span class="height"></span>px)</p>
+                            <p>Dead: <span class="dead">0</span></p>
+                            <p>Alive: <span class="alive">0</span></p>
+                            <p>Drawn: <span class="drawn">0</span></p>
+                            <p><span class="fps">0</span> FPS</p>
+                            <a class="save" href="" download="capture.png">Save</a>
+                        </div>
+
+                    <div class="box-center-inner">
+                        <h1><span class="greet">As-salaamu alaikum,</span> <br>I'm <span class="text-sec">Ali Affaz,</span> <br>
+                            Your full-stack developer.</h1>
+                        <a href="#mainmenu" class="btn-primary">Let's go</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center main-menu" id="mainmenu">
+            <ul class="tabs">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Recent Projects</a></li>
+                <li><a href="#milestones">Milestones</a></li>
+                <!-- <li><a href="#strengths">Strengths</a></li> -->
+                <li><a href="#getintouch">Get In Touch</a></li>
+            </ul>
+        </section>
+        
+
+        <section class="text-center main-menu main-menu-fixed">
+            <ul class="tabs">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Recent Projects</a></li>
+                <li><a href="#milestones">Milestones</a></li>
+                <!-- <li><a href="#strengths">Strengths</a></li> -->
+                <li><a href="#getintouch">Get In Touch</a></li>
+            </ul>
+        </section>
+
+        
+        <div class="container">
+            <h1 class="text-center divider"></h1>
+            <div class="theme-swither">
+                <div class="theme-bar">
+                    <div class="sw theme-d active">Dark</div>
+                    <div class="sw theme-w">White</div>
+                </div>
+            </div>
+            <!-- Strengths -->
+            <div class="flex-container text-center mb3">
+                <div class="flex-item">
+                    <div class="list-item-img emoji grayscale">
+                        🤠
+                    </div>
+                    <div class="">
+                        <h3 class="head">Affable</h3>
+                        <span>Your friendly buddy who is forbearance and empathetic by nature.</span>
+                    </div>
+                </div>
+
+                <div class="flex-item">
+                    <div class="list-item-img emoji grayscale">
+                        👍
+                    </div>
+                    <div class="">
+                        <h3 class="head">Appositeness</h3>
+                        <span>Suitable, felicitous and apt for any situation and always comes up with the best and correct solution.</span>
+                    </div>
+                </div>
+
+                <div class="flex-item">
+                    <div class="list-item-img emoji grayscale">
+                        🤝
+                    </div>
+                    <div class="">
+                        <h3 class="head">Mentorship</h3>
+                        <span>Love helping freshers on their path for being innovative and help the team towards a hustle free automation.</span>
+                    </div>
+                </div>
+
+                <div class="flex-item">
+                    <div class="list-item-img emoji grayscale">
+                        👀
+                    </div>
+                    <div class="">
+                        <h3 class="head">Visionary</h3>
+                        <span>Thinks out of the box and is potential to create innovative ideas that can skyrocket using evolving technology.</span>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Profile and Skills -->
+            <div class="text-center mb3 mt3">
+                <span class="anchor" id="about"></span>
+                <h1 class="text-center divider">ABOUT ME</h1>
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <div class="profile-pic">
+                            <img class=""src="../static/img/affaz.jpeg" />
+                        </div>
+                        <div class="mse-5">
+                            
+                            <span>A <a href="https://visitmaldives.com/en" class="reset">Maldivian 🇲🇻</a> self-taught & self-motivated <b><a href="https://www.w3schools.com/whatis/whatis_fullstack.asp" class="reset">full-stack Developer</a> </b> who have a significant passion for innovation and resilient challenges. Also, merge a passion for usability and user experience with technical knowledge to create cool digital experiences.</span>
+                                
+                            <div class="mt3"><a href="#getintouch" class="btn-primary">Let's create something cool!</a></div>
+                        </div>
+                    </div>
+    
+                    <div class="flex-item">
+                        <div class="skill-item">
+                            <div class="name">Python</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width:55%"></div>
+                            </div>
+                            <div class="bar-percent">55%</div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="name">JavaScript</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width:80%"></div>
+                            </div>
+                            <div class="bar-percent">80%</div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="name">HTML</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width:75%"></div>
+                            </div>
+                            <div class="bar-percent">75%</div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="name">CSS</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width:80%"></div>
+                            </div>
+                            <div class="bar-percent">70%</div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="name">ReactJS</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width:70%"></div>
+                            </div>
+                            <div class="bar-percent">70%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="name">C#</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width:90%"></div>
+                            </div>
+                            <div class="bar-percent">90%</div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="name">NodeJs</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width:65%"></div>
+                            </div>
+                            <div class="bar-percent">65%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="name">MariaDb</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width:75%"></div>
+                            </div>
+                            <div class="bar-percent">75%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="name">MSSQL</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width:85%"></div>
+                            </div>
+                            <div class="bar-percent">85%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="name">Firebase</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width:75%"></div>
+                            </div>
+                            <div class="bar-percent">75%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="name">RabbitMQ</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width:70%"></div>
+                            </div>
+                            <div class="bar-percent">70%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="name">Redis</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width:60%"></div>
+                            </div>
+                            <div class="bar-percent">60%</div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="name">Flutter</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width:80%"></div>
+                            </div>
+                            <div class="bar-percent">80%</div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="name">Kotlin</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width:50%"></div>
+                            </div>
+                            <div class="bar-percent">50%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="name">Swift</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width:30%"></div>
+                            </div>
+                            <div class="bar-percent">30%</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="name">AWS</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width:75%"></div>
+                            </div>
+                            <div class="bar-percent">75%</div>
+                        </div>
+
+                    </div>
+                </div>
+
+<!--                 
+                <h1>Hi there 👋</h1>
+                <img class="img-rounded pp 50"src="../static/img/affaz.jpeg" />
+
+                <h2>Full Stack Developer & Consultant</h2>
+                <h1>I'm Affaz and I'm from Maldives 🇲🇻 </h3>
+                <h4>...and yes! there is lot of sun and sand there 🏖️</h4>
+
+                <blockquote>
+                    Excellence is not a gift, but a skill that takes practice. We do not act ‘rightly’ because we are ‘excellent’, in fact we achieve ‘excellence’ by acting ‘rightly.’
+                </blockquote>
+                <div class="text-right">&mdash;Plato, the Greek philosopher-</div> -->
+            </div>
+
+
+
+
+            <!-- <h1 id="about">About me</h1>
+            <div>
+                <p>I have been working with web development sector since 2012, during this period I have worked in different environments, from big consultancy companies to start-ups. Also, I am a self-motivated and a passionate professional who likes to break things and solve problems. I merge a passion for usability and user experience with technical knowledge to create cool digital experiences</p>
+                <p>I merge a passion for usability and user experience with
+                    technical knowledge to create cool digital experiences. My repertoire includes programming languages and tools such as ReactJS, Microsoft .Net Core & Standard, WPF, Windows Forms, Docker, MSSQL, PostgreSQL, Windows and Linux server configuration, Gulp, SASS, LESS, Twitter Bootstrap, jQuery, and more.</p>
+            </div> -->
+
+
+            <!-- Recent projects -->
+            <span class="anchor" id="projects"></span>
+            <h1 class="mt3 divider head-bleft">Recent projects</h1>
+            <div class="list-container">
+                <!-- Project: gaadiya app -->
+                <div class="project-item">
+                    <div class="project-content">
+                        <div>
+                            <div class="d-flex">
+                                <img class="img-rounded 50 appicon mr1" src="../static/img/gaadiya.png" />
+                                <img class="img-rounded 50 appicon" src="../static/img/gaadiya2.png" />
+                            </div>
+                            <h3 class="head">Gaadiya & Driver app</h3>
+                            <span>
+                                Whether you want to drive around the city in any means of transportation or send your valuable items from one place to another, GaadiyaApp is the most convenient transportation and mobility app that aims to povide safety, affordable and quality trips to it's users.
+                            </span>
+                            
+                            <ul class="project-tech-list"><li>Flutter</li><li>Firebase</li><li>Python</li><li>Google APIs</li><li>MariaDb</li></ul>
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.bollard.driver&hl=en&gl=US" target="_blank">
+                                    <img src="../static/svg/android.svg" alt="" /></a>
+
+                                <a href="https://apps.apple.com/us/app/gaadiya-app/id1661914840" target="_blank">
+                                    <img src="../static/svg/ios.svg" alt="" /></a>
+
+                                <a href="https://gaadiya.app" target="_blank">
+                                    <img src="../static/svg/web.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div>
+                            <img src="../static/img/projects/1.png">
+                            <img src="../static/img/projects/2.png">
+                            <img src="../static/img/projects/3.png">
+                            <img src="../static/img/projects/4.png">
+                            <img src="../static/img/projects/5.png">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+
+                <!-- Project: spacehotelier -->
+                <div class="project-item">
+                    <div class="project-content">
+                        <div>
+                            <img class="img-rounded 50 appicon" src="../static/img/spacehotelier.png" />
+                            <h3 class="head">Spacehotelier</h3>
+                            <span>
+                                Space Hotelier is a modern web-based property management system (PMS) for hotels, resorts, and guest houses which enables the hoteliers, an opportunity to manage their entire property with a single piece of software. This comprehensive system can be used to manage single or multiple properties and also manage day-to-day hotel operational activities which will give a motivation to leverage the latest technology.
+
+                            </span>
+                            
+                            <ul class="project-tech-list"><li>C#</li><li>.NETCore</li><li>SignalR</li><li>OTA API</li><li>MSSQL</li></ul>
+                            <div class="project-links">
+                                <a href="https://spacehotelier.com" target="_blank">
+                                    <img src="../static/svg/web.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div>
+                            <img src="../static/img/projects/space1.jpg">
+                            <img src="../static/img/projects/space2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                
+
+                <!-- Project: zeekbox app -->
+                <div class="project-item">
+                    <div class="project-content">
+                        <div>
+                            <img class="img-rounded 50 appicon" src="../static/img/zeekbox.png" />
+                            <h3 class="head">Zeekbox</h3>
+                            <span>
+                                Zeekbox in-home device + app is the easiest way to keep kids safe in online platforms. It monitors internet usage, manage time based internet allowance, pause internet, manage screen time, throttle speed, block inappropriate sites, set time limits, track online activity and manage devices anywhere, everywhere.
+                            </span>
+                            
+                            <ul class="project-tech-list"><li>IOT</li><li>Python</li><li>Flutter</li><li>MariaDb</li></ul>
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.zeekway.zeekbox&hl=en&gl=US" target="_blank">
+                                    <img src="../static/svg/android.svg" alt="" /></a>
+
+                                <a href="https://zeekbox.net" target="_blank">
+                                    <img src="../static/svg/web.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div>
+                            <img src="../static/img/projects/zeek1.png">
+                            <img src="../static/img/projects/zeek2.png">
+                            <img src="../static/img/projects/zeek3.png">
+                            <img src="../static/img/projects/zeek4.png">
+                            <img src="../static/img/projects/zeek5.png">
+                            <img src="../static/img/projects/zeek6.png">
+                            <img src="../static/img/projects/zeek7.png">
+                            <img src="../static/img/projects/zeek8.png">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+
+
+                <!-- Project: seguro insurance app -->
+                <div class="project-item">
+                    <div class="project-content">
+                        <div>
+                            <img class="img-rounded 50 appicon" src="../static/img/seguro.png" />
+                            <h3 class="head">Seguro Insurance</h3>
+                            <span>
+                                We’re one of leading insurance broker throughout the Maldives. As a full-service independent insurance consultant firm we are mainly engaged in insurance brokerage, total integrated risk management consultancy and other insurance related services in Maldives licensed under the governing laws and regulations of Maldives Monetary Authority.
+                            </span>
+                            
+                            <ul class="project-tech-list"><li>.NETCore</li><li>SCSS</li><li>HTML5</li><li>MSSQL</li></ul>
+                            <div class="project-links">
+                                <a href="https://seguroinsurance.net" target="_blank">
+                                    <img src="../static/svg/web.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div>
+                            <img src="../static/img/projects/seguro1.jpg">
+                            <img src="../static/img/projects/seguro2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+
+                <!-- Project: ant queue -->
+                <div class="project-item">
+                    <div class="project-content">
+                        <div>
+                            <img class="img-rounded 50 appicon" src="../static/img/antqueue.png" />
+                            <h3 class="head">Ant Queue</h3>
+                            <span>
+                                Antqueue Mobile is a full-fledged Queue Management Solution to enhance your experience as a customer. With Anqueue Mobile App, you can register your profile online and create a token to a service of preference provided by any organisations that subscribe to the Ant Queue QMS.
+                            </span>
+                            
+                            <ul class="project-tech-list"><li>ReactJs</li><li>Firebase</li><li>NodeJs</li><li>Google Cloud APIs</li></ul>
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.app.antqueuelive&hl=en&gl=US" target="_blank">
+                                    <img src="../static/svg/android.svg" alt="" /></a>
+
+                                <a href="https://apps.apple.com/us/app/ant-queue/id1482412496" target="_blank">
+                                    <img src="../static/svg/ios.svg" alt="" /></a>
+
+                                <a href="https://www.antqueue.com" target="_blank">
+                                    <img src="../static/svg/web.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div>
+                            <img src="../static/img/projects/ant1.jpeg">
+                            <img src="../static/img/projects/ant2.jpeg">
+                            <img src="../static/img/projects/ant3.jpeg">
+                            <img src="../static/img/projects/ant4.jpeg">
+                            <img src="../static/img/projects/ant5.jpeg">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+
+
+
+                <!-- Project: gaadiya app -->
+                <div class="project-item">
+                    <div class="project-content">
+                        <div>
+                            <img class="img-rounded 50 appicon" src="../static/img/mira.png" />
+                            <h3 class="head">MIRA Connect+</h3>
+                            <span>
+                                MIRAconnect+ is a Taxpayer online service portal providing taxpayers, agents and accountants to perform their Tax related services online. MIRAconnect+ is a modern web-based portal with enhanced features, robust platform and feasible environment for users to file returns and pay their taxes online.
+                            </span>
+                            
+                            <ul class="project-tech-list"><li>C#</li><li>.NET</li><li>MSSQL</li><li>SAP</li></ul>
+                            <div class="project-links">
+                                <a href="https://www.mira.gov.mv/MIRAconnect/Accounts/Login" target="_blank">
+                                    <img src="../static/svg/web.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div>
+                            <img src="../static/img/projects/mira1.png">
+                            <img src="../static/img/projects/mira2.jpeg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Milestones -->
+            <span class="anchor" id="milestones"></span>
+            <h1 class="divider head-bleft">Milestones</h1>
+            <div class="list-container milestones">
+                <div class="line">
+                    <div class=""></div>
+                </div>
+
+                <div class="list-item">
+                    <div class="list-item-img">
+                        <h2>2022</h1>
+                    </div>
+                    <div class="list-item-content border-0">
+                        <h2 class="head click-more">🎓 Masters in Cyber Security <span>↓</span></h2>
+                        <h4 class="head">ITMO University, St. Petersburg, Russia 🇷🇺</h4>
+                        <div class="more">
+                            Unlike other educational programs in information security, this program focuses on studying best international practices and information security standards.
+                        </div>
+                        <ul class="more">
+                            <li>Modeling of Cryptosystems</li>
+                            <li>Hardware-Software Information Protection</li>
+                            <li>Mathematical Modeling of Objects and Systems</li>
+                            <li>Economics of information Protection</li>
+                            <li>Information Security Management</li>
+                        </ul>
+                        <div class="more">
+                            <a href="https://en.itmo.ru/en/viewjep/2/93/Information_Security.htm">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="list-item">
+                    <div class="list-item-img">
+                        <h2>2019</h1>
+                    </div>
+                    <div class="list-item-content border-0">
+                        <h2 class="head click-more">🧑🏻‍💻 Consultant Developer / Dev Lead <span>↓</span></h2>
+                        <h4 class="head">Civil Service Commission &middot; 08/2019 – 06/2022</h4>
+                            
+                        <span class="more">
+                            Civil Service Commission deals with the administration of
+more than 25k employment service of 1500 diverse government authorities taking over the challenging task of establishing a modern professional Civil Service, and also operating the most important driving force of the government policy and democratic governance in the Maldives.
+                        </span>
+                        <ul class="more">
+                            <li>Development and maintenance of “CS Viuga” System built using C#, Microsoft .NET Framework and MVC</li>
+                            <li>Build enhancements on existing modules proposed by the System steering committee.</li>
+                            <li>Build Auto Request Assignment module which redirects
+                                incoming requests to next available user within predefined groups thus saving a lot of time and manual assignment hassle from supervisors.</li>
+                            <li>Design and development of new features and bring enhancements to existing features.</li>
+                            <li>Provide extensive support and advising other developers on UI, giving feedback about how to improve the overall experience on the application to the
+                                end user.</li>
+                            <li>Keep the code quality high reviewing code from other developers and suggesting improvement.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="list-item">
+                    <div class="list-item-img">
+                        <h2>2017</h1>
+                    </div>
+                    <div class="list-item-content border-0">
+                        <h2 class="head click-more">🧑🏻‍💻 Co-Founder & CEO <span>↓</span></h2>
+                        <h4 class="head">Paaticles Tech Pvt Ltd &middot; 01/2017 – 12/2018</h4>
+                            
+                        <span class="more">
+                            Paaticles is a free multi-vendor online platform for shopping, listing, finding apartments, services, ferries, hotels, clinics and more. I used to be one of the co-founders and was responsible for design and development of client application and support.
+                        </span>
+                        <ul class="more">
+                            <li>Develop E-Commerce platform based on C#, MVC, IdentityServer4 and REST APIs.</li>
+                            <li>Lead a team of 12 developers, giving support to the client's multi-cultural team, providing feedback, clarifying requirements and helping with technical questions.</li>
+                            <li>Keep the Project Champion and the IT Contact updated on the overall progress of the projects and manage the tasks distributed to the team.</li>
+                            <li>Keep the code and the features implemented by the other developers in accordance to the requirements.</li>
+                            <li>Work closely with the DevOps team with AWS tools and Server configuration.</li>
+                            <li>Distributed Version-Control system for source code changes with CI/CD Pipeline and Automate Code deployment with AWS Code Deploy.</li>
+                            <li>Generating leads, held client meeting, estimating budget, delegating works and overlooking.</li>
+                            <li>Ensuring successful delivery by conducting effective UAT and SIT.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="list-item">
+                    <div class="list-item-img">
+                        <h2>2016</h1>
+                    </div>
+                    <div class="list-item-content border-0">
+                        <h2 class="head click-more">🧑🏻‍💻 Project Management Coordinator <span>↓</span></h2>
+                        <h4 class="head">Dhiraagu &middot; 02/2016 – 10/2016</h4>
+                            
+                        <span class="more">
+                            Dhiraagu is the leading and the largest provider of telecommunications and digital services in the Maldives. My job here comprises analyzing data from multiple sources, running ETL process and building Business Intelligence reports to generate actionable insights.
+                        </span>
+                        <ul class="more">
+                            <li>Extraction of data from source systems such as ASCII files, MSSQL, Network Switch dumps, etc.</li>
+                            <li>Transforming combined data using multiple algorithms to manipulate and aggregate with the least time.</li>
+                            <li>Data Mining, Research and Development of Custom Business Intelligence Solution.</li>
+                            <li>Find satisfying marketing campaign clusters to run selective promotions.</li>
+                            <li>Built reporting interface and actionable insight dashboards for Marketing team.</li>
+                            <li>Maintain and Support Data Warehousing Infrastructure and create Data Reports using SSIS and SSAS</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="list-item">
+                    <div class="list-item-img">
+                        <h2>2014</h2>
+                    </div>
+                    <div class="list-item-content border-0">
+                        <h2 class="head click-more">🧑🏻‍💻 Programmer <span>↓</span></h2>
+                        <h4 class="head">Maldives Inland Revenue Authority &middot; 07/2014 - 12/2015</h4>
+                            
+                        <span class="more">
+                            "Maldives Inland Revenue Authority (MIRA)" was established as a separate and independent legal entity under the Tax Administration Act which was ratified on 18 March 2010. I joined MIRA during its third year after establishment. MIRA is managed and operated on SAP Finance Management application and inhouse applications based on Microsoft stack.
+                        </span>
+                        <ul class="more">
+                            <li>Development and Maintenance of all internal application used within organization</li>
+                            <li>Learned ABAP language and SAP BRF module</li>
+                            <li>Design and Development of new Online Tax Collection Application “MIRA Connect” using SAP and SOAP Web Service as Back End</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="list-item">
+                    <div class="list-item-img">
+                        <h2>2013</h2>
+                    </div>
+                    <div class="list-item-content border-0">
+                        <h2 class="head click-more">🎓 Bachelor of Science – Computer Science, Mathematic & Electronics <span>↓</span></h2>
+                        <h4 class="head">Christ University, Bangalore, India 🇮🇳</h4>
+                        <span class="more">
+                            Department of Computer Science of CHRIST (Deemed to be University) strives to shape outstanding computer professionals with ethical and human values to reshape nations destiny. The training imparted aims to prepare young minds for the challenging opportunities in the IT industry with a global awareness rooted in the Indian soil, nourished and supported by experts in the field. The curriculum in computer science scales from imparting basic concepts in lower semesters to fine grain level along with electives in the higher semesters. Programming labs and projects strengthen the domain knowledge and exposure during the triple main course. Computer Science courses in the curriculum prepare young minds for the challenging opportunities in the IT industry. The curriculum provides strong foundation in fundamentals of computer science for employability and/or further graduation.  The computer science courses equip the students in providing professional solutions to real-time problems.
+                        </span>
+                        <div class="more">
+                            <a href="https://christuniversity.in/sciences/physics-and-electronics/bachelor-of-science-bsc-in-computer-sc-maths-electronics-cme">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <span class="anchor" id="getintouch"></span>
+            <h1 class="mt3 divider head-bleft">Get in touch</h1>
+            <div class="contact mb3">
+                Want to collaborate or have a query? 
+
+                <h3 class="">Let's get social!
+                    <br>Say Hi 👋
+                </h3>
+                <div class="social-media">
+                    <a target="_blank" href="mailto:efqz11@gmail.com"><div class="gmail"></div></a>
+                    <a target="_blank" href="https://t.me/efqz11"><div class="telegram"></div></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/affaz/"><div class="linkedin"></div></a>
+                    <a target="_blank" href="https://twitter.com/3fqz"><div class="twitter"></div></a>
+                    <a target="_blank" href="https://www.facebook.com/afaaz?mibextid=LQQJ4d"><div  class="facebook"></div></a>
+                    <a target="_blank" href="https://www.instagram.com/efaz11/?hl=en"><div class="instagram"></div></a>
+                  
+                    
+                   
+                </div>
+               
+            </div>
+
+            <div class="scroll-top">↑</div>
+
+            <br>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,309 @@
+html{scroll-behavior: smooth;}
+
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    margin: 0px;
+    height: 100%;
+}
+p,span,ul.more{color: rgb(85, 85, 85);}
+.container{
+    margin: 5rem 10rem;
+}
+
+.text-center {text-align: center;}
+
+.img-rounded {
+    border-radius: 50px;
+    width: 100px;
+}
+
+.img-rounded.pp {
+    border-radius: 50%;
+    width: 350px;
+}
+
+
+.list-container {
+    display: block;
+}
+
+.list-item{
+    display: inline-flex;
+    width: 100%;
+}
+
+.list-item-img{
+    margin-right: 20px;
+}
+
+.list-item-img img{
+    display: block;
+    width: 75px;
+    border-radius: 15px;
+    box-shadow: 2px 3px 5px rgb(208, 208, 208);
+    max-height: 75px;
+    object-fit: contain;
+}
+
+.list-item-content {
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.head { 
+    margin-top:0px !important;
+    margin-bottom:10px !important;
+}
+
+a:not(.contact a){text-decoration: unset;}
+
+span.vert-divider{
+    border-left: 1px solid rgb(190, 189, 189);
+    height: 50px;
+    position: absolute;
+    left: 12rem;
+}
+
+.border-0{border:none !important}
+.float-right{float:right}
+.text-right{text-align:right}
+.mb0{margin-bottom:0px !important}
+.mb1{margin-bottom:10px}
+.mb2{margin-bottom:20px}
+.mb3{margin-bottom:35px}
+.mt2{margin-top:20px}
+.mt3{margin-top:35px}
+.more,.click-more span {display: none;}
+.milestones .head {cursor: pointer;}
+
+.list-item-img h2 {
+    background-color: white;
+    z-index: 9;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+
+.list-item-img.emoji {
+    font-size: 40;
+    margin-right: 0px;
+    font-size: 70;
+    margin-bottom: 20px;
+}
+
+.milestones .line {
+    position: absolute;
+    /* height: 100%; */
+}
+.milestones .line div {
+    border-left: 2px dashed rgb(193, 193, 193);
+    height: 100%;
+    position: absolute;
+    left: 26px;
+}
+.grayscale{filter: grayscale(1);}
+
+
+.scroll-top {
+    padding: 12px 18px;
+    position: fixed;
+    bottom: 20px;
+    right: 150px;
+    /* border-left: 1px solid rgb(190, 189, 189); */
+    background-color: #7a7a7a;
+    color: white;
+    opacity: 0.1;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-top:hover {opacity: .5;}
+
+
+/* home page and menu */
+.box {
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    height: calc(100vh + 53px);
+  }
+
+  .box-center{
+    background:rgb(189, 189, 189);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  .box-center-inner{
+    
+    /* position: absolute; */
+    margin:0 auto;
+    /* height: 50vh; */
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+  }
+
+  .main-menu{
+    background: rgb(91, 91, 91);
+    border-bottom: 4px solid rgb(18, 18, 18);
+  }
+
+  .main-menu-fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: none;
+    z-index: 88;
+  }
+
+ul.tabs{
+    display: inline-flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0px !important;
+    padding: 0rem;
+}
+
+ul.tabs li{
+    padding: 10px 20px;
+    transition: all ease 1s;
+    opacity: 0.6;
+}
+ul.tabs li:hover {
+    opacity: 1;
+}
+
+
+ul.tabs li a{
+    color:rgb(227, 227, 227);
+}
+ul.tabs li:active a{
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* Tablets and Desktop */
+}
+
+@media only screen and (max-width: 767px) {
+    /* Phones */
+    .container{
+        margin: 1rem 2rem;
+    }
+
+    ul.tabs li{
+        padding: 5px 10px;
+    }
+    .scroll-top {
+        bottom: 10px;
+        right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* Portrait Phones */
+}
+
+
+
+
+  a.btn-primary{
+    border:2px solid white;
+    padding: 7px 10px;
+    font-weight: 400;
+    font-size: 18px;
+    transition: all ease 1s;
+    color: #000;
+  }
+  a.btn-primary:hover{
+    border:2px solid rgb(73, 73, 73);
+    background-color:  rgb(73, 73, 73);
+    color: white;
+  }
+
+
+
+.flex-container {
+    display: flex;
+    align-content: space-evenly;
+}
+
+.flex-item{
+    display: block;
+    width: 100%;
+    margin: 0 10px;
+}
+
+/* PROFILE PIC */
+.profile-pic{
+    margin: 20px auto;
+    clear: both;
+}
+.profile-pic img {
+    border-radius: 15px;
+    box-shadow: 2px 3px 5px rgb(208, 208, 208);
+    max-height: 150px;
+    object-fit: contain;
+    /* height: 150px; */
+}
+.mse-5{
+    margin: 10px 20px;
+}
+
+/* SKILLS */
+.skill-item{
+    height: 20px;
+    display: inline-flex;
+    background-color:  rgb(220, 220, 220);
+    width: 100%;
+    margin: 5px 7px;
+    line-height: 1.3;
+    border-radius: 10px;
+}
+.skill-item .name {
+    width: 10%;
+    background-color:  rgb(73, 73, 73);
+    color: #fff;
+    padding-left: 7px;
+    padding-right: 5px;
+    min-width: 80px;
+    text-align: start;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 14px;
+}
+.skill-item .bar-container{
+    width: 80%;
+}
+.skill-item .bar-container .bar{
+    height: 20px;
+    background-color:  rgb(19, 19, 19);
+}
+
+.skill-item .bar-percent {
+    text-align: right;
+    width: 10%;
+    padding-right: 8px;
+    font-size: 14px;
+}
+
+h1.divider {
+    margin-bottom: 3rem;
+margin-top: 4rem;
+}
