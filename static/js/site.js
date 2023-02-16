@@ -18,8 +18,9 @@ $(function() {
         $(this).find('span').hide();
     });
 
-
+    // set miletones height on open
     $('.line').css('height', $('.list-container.milestones').height() + "px");
+
     // set container height right after header section
     $('#mainmenu').css('margin-top', $('.box-center').height() + "px");
 
@@ -110,7 +111,7 @@ var greetings = [
 
 function changeGreeting(){
     var newIndex = Math.floor(Math.random()*greetings.length);
-    console.log(newIndex + ":" + greetings[newIndex]);
+    // console.log(newIndex + ":" + greetings[newIndex]);
     $('.greet').fadeOut("normal", function() {
         $(this).text(greetings[newIndex] + ',').fadeIn();
     });
