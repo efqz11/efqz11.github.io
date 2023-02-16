@@ -244,7 +244,7 @@ span.vert-divider {
   height: calc(100vh + 53px);
 }
 .box .box-center {
-  background: #bdbdbd;
+/*   background: #bdbdbd; */
   height: 100vh;
   align-items: center;
   display: flex;
