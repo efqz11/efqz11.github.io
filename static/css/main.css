@@ -363,6 +363,7 @@ span.vert-divider {
   .social-media {
     transform: scale(0.8);
     transform-origin: left;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
