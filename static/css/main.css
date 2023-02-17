@@ -247,6 +247,7 @@ span.vert-divider {
   height: calc(100vh + 53px);
 }
 .box .box-center {
+  background: #000000;
   height: 100vh;
   align-items: center;
   display: flex;
@@ -407,7 +408,7 @@ a.btn-primary:hover {
 .profile-pic img {
   border-radius: 15px;
   box-shadow: 2px 3px 5px #d0d0d0;
-  max-height: 150px;
+  max-height: 250px;
   object-fit: contain;
   /* height: 150px; */
 }
